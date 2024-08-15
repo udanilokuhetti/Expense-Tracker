@@ -1,0 +1,221 @@
+body{
+    background-color:black;
+    font-family: "Ubuntu", sans-serif;;
+}
+
+.container{
+    border:3px solid rgb(100, 4, 103);
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius: 25px;
+    background:linear-gradient(
+        to right, 
+        rgb(207, 39, 207),
+        rgba(218, 138, 237, 0.8)
+    );
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.6);
+}
+
+.details{
+    text-align: center;
+}
+
+h1{
+    color:rgb(42, 19, 51);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a h3, .but{
+    border:2px solid blueviolet;
+    border-radius: 10px;
+    padding:5px;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(218, 138, 237, 0.8);
+}
+
+/*.back, .popup {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    /*margin-top: 20px; /* Add margin if needed */
+    /*margin-bottom: 20px;
+}*/
+
+/*.back-link, .popup {
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 5px 10px; /* Add padding for better spacing */
+    /*background-color: rgba(218, 138, 237, 0.8);
+    color: black; /* Ensure text is visible */
+    /*text-decoration: none; /* Remove underline from link */
+    /*text-align: center; /* Center text inside the link */
+    /*display: inline-block; /* Ensure width and padding work correctly */
+/*}*/
+
+button{
+    margin-bottom:30px;
+}
+
+hr{
+    width:50%;
+    height:2px;
+    background-color: rgb(42, 19, 51);
+    border:none;
+}
+
+th{
+    padding:20px;
+}
+
+table{
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+    border: 2px solid #45035b; /* Specify a border width and color */
+    border-collapse: collapse;
+    width:80%;
+}
+
+table th, table td {
+    border: 1px solid #45035b; /* Set the border for the table cells */
+    padding: 10px; /* Add padding inside the cells */
+    text-align: center; /* Center-align text in the cells */
+}
+
+.row{
+    border-bottom: 1px solid black;
+}
+
+.row:last-child{
+    border-bottom: none;
+}
+
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #45035b;
+    border-radius: 5px;
+    background:transparent;
+    font-size: 16px;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    background-color: rgba(218, 138, 237, 0.8);;
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.balance-container{
+    text-align: center;
+}
+
+.balance-container h3{
+    text-align: center;
+}
+
+.income-row {
+    background-color: #2fd35573; 
+}
+
+.expense-row {
+    background-color: #b6243092;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #45035b;
+    text-align: center;
+}
+
+.delete-btn{
+    background: transparent;
+    border-radius: 50%;
+}
+
+.popup{
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.popup .popuptext{
+    visibility:hidden;
+    width:160px;
+    background-color:aliceblue;
+    color:black;
+    text-align: center;
+    border-radius: 6px;
+    padding:8px 0;
+    position:absolute;
+    z-index:1;
+    bottom:125%;
+    left:50%;
+    margin-left: -80px;
+}
+
+.popup .popuptext::after{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:50%;
+    margin-left:-5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation:fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn{
+    from {opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.butt-container {
+    display: flex;
+    justify-content: space-between; /* Align buttons side by side with space in between */
+    margin: 20px auto; /* Center the container */
+    width: 50%; /* Adjust width as needed */
+}
+
+.popup, .back {
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 10px 20px; /* Add padding for better spacing */
+    background-color: rgba(218, 138, 237, 0.8);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 10px 10px 10px; /* Add space between buttons */
+}
